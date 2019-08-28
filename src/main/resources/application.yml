@@ -3,13 +3,13 @@
 logging.file: logs/application.log
 logging:
   level:
-      org:
-        springframework:
-          web: DEBUG
-        hibernate: DEBUG
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: DEBUG
 spring:
   datasource:
-    url:  jdbc:h2:file:./h2/org
+    url:  jdbc:h2:mem:tws_persistence_db
   jpa:
     hibernate:
       ddl-auto: update
